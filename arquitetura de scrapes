@@ -1,38 +1,65 @@
 /opt
+
+platform/
+
 │
 ├── core/
+│   │
 │   ├── database.py
-│   ├── logger.py
 │   ├── config.py
-│   ├── models.py
-│   ├── utils.py
-│   └── docker/
+│   ├── logger.py
+│   ├── exceptions.py
+│   ├── settings.py
+│   │
+│   ├── models/
+│   │     base.py
+│   │
+│   ├── database/
+│   │     postgres.py
+│   │
+│   ├── network/
+│   │     client.py
+│   │     retry.py
+│   │
+│   └── utils/
+│         dates.py
+│         strings.py
 │
-├── deu_no_poste/
-│   ├── Dockerfile
-│   ├── docker-compose.yml
-│   ├── requirements.txt
-│   ├── .env
-│   ├── app/
-│   │   ├── scraper.py
-│   │   ├── main.py
-│   │   └── models.py
-│   └── logs/
 │
-├── supermercados/
-│   ├── Dockerfile
-│   ├── docker-compose.yml
-│   ├── requirements.txt
-│   ├── .env
-│   ├── app/
-│   └── logs/
+├── templates/
 │
-├── instagram/
-│   ├── Dockerfile
-│   ├── docker-compose.yml
-│   ├── requirements.txt
-│   ├── .env
-│   ├── app/
-│   └── logs/
+│   python_scraper/
 │
-└── comparador_precos/
+│       Dockerfile
+│       docker-compose.yml
+│       requirements.txt
+│       .env.example
+│
+│       app/
+│
+│           main.py
+│
+│           scraper.py
+│
+│           models.py
+│
+│           services.py
+│
+│           config.py
+│
+│
+├── projects/
+│
+│   deu_no_poste/
+│
+│   supermercados/
+│
+│   instagram/
+│
+│   b3/
+│
+│   mercadolivre/
+│
+│   ...
+│
+└── postgres/
