@@ -1,65 +1,19 @@
-/opt
-
-platform/
-
+/opt/framework
 │
-├── core/
-│   │
-│   ├── database.py
-│   ├── config.py
-│   ├── logger.py
-│   ├── exceptions.py
-│   ├── settings.py
-│   │
-│   ├── models/
-│   │     base.py
-│   │
-│   ├── database/
-│   │     postgres.py
-│   │
-│   ├── network/
-│   │     client.py
-│   │     retry.py
-│   │
-│   └── utils/
-│         dates.py
-│         strings.py
+├── pyproject.toml
+├── README.md
+├── LICENSE
 │
+├── src/
+│   └── framework/
+│       ├── config/
+│       ├── database/
+│       │   ├── base.py
+│       │   └── postgres.py
+│       ├── logging/
+│       ├── network/
+│       │   └── client.py
+│       ├── utils/
+│       └── exceptions/
 │
-├── templates/
-│
-│   python_scraper/
-│
-│       Dockerfile
-│       docker-compose.yml
-│       requirements.txt
-│       .env.example
-│
-│       app/
-│
-│           main.py
-│
-│           scraper.py
-│
-│           models.py
-│
-│           services.py
-│
-│           config.py
-│
-│
-├── projects/
-│
-│   deu_no_poste/
-│
-│   supermercados/
-│
-│   instagram/
-│
-│   b3/
-│
-│   mercadolivre/
-│
-│   ...
-│
-└── postgres/
+└── tests/
