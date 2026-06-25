@@ -1,0 +1,22 @@
+/opt
+
+core/
+    database.py
+    docker/
+    logger.py
+    config.py
+
+deu_no_poste/
+    scraper.py
+    models.py
+    main.py
+
+supermercados/
+    scraper.py
+    models.py
+    main.py
+
+instagram/
+    scraper.py
+    models.py
+    main.py
