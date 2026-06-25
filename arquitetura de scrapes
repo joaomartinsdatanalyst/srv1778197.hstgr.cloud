@@ -1,22 +1,38 @@
 /opt
-
-core/
-    database.py
-    docker/
-    logger.py
-    config.py
-
-deu_no_poste/
-    scraper.py
-    models.py
-    main.py
-
-supermercados/
-    scraper.py
-    models.py
-    main.py
-
-instagram/
-    scraper.py
-    models.py
-    main.py
+│
+├── core/
+│   ├── database.py
+│   ├── logger.py
+│   ├── config.py
+│   ├── models.py
+│   ├── utils.py
+│   └── docker/
+│
+├── deu_no_poste/
+│   ├── Dockerfile
+│   ├── docker-compose.yml
+│   ├── requirements.txt
+│   ├── .env
+│   ├── app/
+│   │   ├── scraper.py
+│   │   ├── main.py
+│   │   └── models.py
+│   └── logs/
+│
+├── supermercados/
+│   ├── Dockerfile
+│   ├── docker-compose.yml
+│   ├── requirements.txt
+│   ├── .env
+│   ├── app/
+│   └── logs/
+│
+├── instagram/
+│   ├── Dockerfile
+│   ├── docker-compose.yml
+│   ├── requirements.txt
+│   ├── .env
+│   ├── app/
+│   └── logs/
+│
+└── comparador_precos/
